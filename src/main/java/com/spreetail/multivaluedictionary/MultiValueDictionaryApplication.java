@@ -77,7 +77,10 @@ public class MultiValueDictionaryApplication {
                         enterCommand();
                         break;
                 }
-                enterCommand();
+                if(!close){
+                    enterCommand();
+                }
+
 
             } catch (IllegalArgumentException e) {
                 PrintUtility.print(
