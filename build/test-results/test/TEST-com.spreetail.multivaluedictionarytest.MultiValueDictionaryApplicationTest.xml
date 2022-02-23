@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-02-23T21:33:08" hostname="LAPTOP-CLBTF503" time="0.139">
+  <properties/>
+  <testcase name="testKeyExists()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.034"/>
+  <testcase name="testAdd()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.002"/>
+  <testcase name="testKeys()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.002"/>
+  <testcase name="testMemberExists()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.001"/>
+  <testcase name="testInvalidInputs()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.08"/>
+  <testcase name="testMembers()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.001"/>
+  <testcase name="testAllMembers()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.004"/>
+  <testcase name="testRemove()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.002"/>
+  <testcase name="testRemoveAll()" classname="com.spreetail.multivaluedictionarytest.MultiValueDictionaryApplicationTest" time="0.004"/>
+  <system-out><![CDATA[Please provide valid command in the form of: ADD <key> <value>
+
+
+Please provide valid command in the form of: ADD <key> <value>
+
+
+Please provide valid command in the form of: MEMBERS <key>
+
+
+Please provide valid command in the form of: CLEAR
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
