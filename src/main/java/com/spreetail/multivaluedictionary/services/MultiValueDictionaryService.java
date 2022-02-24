@@ -155,4 +155,22 @@ public class MultiValueDictionaryService {
             }
         }
     }
+
+    public void getIntersect(String key1, String key2){
+        if (!dictionary.itemExist(key1) || !dictionary.itemExist(key2)) {
+            PrintUtility.print(Messages.KEY_DOES_NOT_EXIST);
+            return;
+        }
+
+        Set<String> set1 = dictionary.getItemFromDictionary(key1);
+        Set<String> set2 = dictionary.getItemFromDictionary(key2);
+
+        set1.retainAll(set2);
+        int count = 1;
+        for(String value: set1) {
+            PrintUtility.print(count + ") " + value);
+            count++;
+        }
+
+    }
 }

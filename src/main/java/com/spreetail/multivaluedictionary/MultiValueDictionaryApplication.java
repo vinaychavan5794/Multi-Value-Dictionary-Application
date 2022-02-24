@@ -4,6 +4,8 @@ import com.spreetail.multivaluedictionary.constants.Commands;
 import com.spreetail.multivaluedictionary.constants.Messages;
 import com.spreetail.multivaluedictionary.services.MultiValueDictionaryService;
 import com.spreetail.multivaluedictionary.utils.PrintUtility;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 /* MultiValueDictionaryApplication Class provides a console menu through which users can submit their commands .*/
@@ -29,10 +31,9 @@ public class MultiValueDictionaryApplication {
                     PrintUtility.print(Messages.PROVIDE_VALID_COMMAND);
                     continue;
                 }
-
+                input[0] = input[0].toUpperCase();
                 if(isInputInValid(input)) continue;
-                Commands command = Commands.valueOf(input[0].toUpperCase());
-
+                Commands command = Commands.valueOf(input[0]);
                 switch (command) {
                     case KEYEXISTS:
                         multiValueDictionaryService.keyExists(input[1]);
@@ -64,6 +65,9 @@ public class MultiValueDictionaryApplication {
                     case ITEMS:
                         multiValueDictionaryService.getAllItems();
                         break;
+                    case INTERSECT:
+                        multiValueDictionaryService.getIntersect(input[1], input[2]);
+                        break;
                     case HELP:
                         PrintUtility.print(Messages.HELP);
                         break;
@@ -80,8 +84,6 @@ public class MultiValueDictionaryApplication {
                 if(!close){
                     enterCommand();
                 }
-
-
             } catch (IllegalArgumentException e) {
                 PrintUtility.print(
                         Messages.AVAILABLE_COMMANDS);
@@ -109,7 +111,8 @@ public class MultiValueDictionaryApplication {
 
         if ((input[0].equals(Commands.ADD.toString()) ||
                 input[0].equals(Commands.MEMBEREXISTS.toString()) ||
-                input[0].equals(Commands.REMOVE.toString()) )
+                input[0].equals(Commands.REMOVE.toString()) ||
+                input[0].equals(Commands.INTERSECT.toString()))
                 && input.length != 3) {
             PrintUtility.print(Messages.PROVIDE_VALID_COMMAND_FORMAT + input[0] + Messages.KEY_VALUE_PAIR );
             PrintUtility.print(newLine);

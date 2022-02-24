@@ -13,5 +13,6 @@ public enum Commands  {
         REMOVE,
         REMOVEALL,
         CLEAR,
-        HELP
+        HELP,
+        INTERSECT
 }
