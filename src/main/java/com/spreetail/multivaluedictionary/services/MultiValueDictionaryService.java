@@ -144,6 +144,7 @@ public class MultiValueDictionaryService {
     public void getAllItems() {
         if (dictionary.getDictionarySize() == 0) {
             PrintUtility.print(Messages.DICTIONARY_EMPTY);
+            return;
         }
         int count = 1;
         for (String key : dictionary.getKeySet()) {
