@@ -46,10 +46,12 @@ In the project root directory execute below command inside the terminal:
 **.\gradlew clean build**
 
 This will build a jar in \build\libs folder. Once the jar is build, you can copy it to any foler
-and execute the following command inside the terminal from the folder having the jar
+and execute the following command inside the terminal from the folder having the jar:
 
 **java -jar Name_Of_Jar.jar**
 
-Alternatively, you can go to inside the appJar folder in the root directory of the project and execute below command:
+Alternatively, you can go inside the appJar folder in the root directory of the project and execute below command:
 
 **java -jar MultiValueDictionaryApplication.jar**
+  
+  
