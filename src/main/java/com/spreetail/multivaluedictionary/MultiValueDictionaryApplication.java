@@ -101,7 +101,7 @@ public class MultiValueDictionaryApplication {
         if ((input[0].equals(Commands.MEMBERS.toString()) ||
                 input[0].equals(Commands.REMOVEALL.toString())
                 || input[0].equals(Commands.KEYEXISTS.toString()))
-                && input.length == 1) {
+                && input.length != 2) {
             PrintUtility.print(Messages.PROVIDE_VALID_COMMAND_FORMAT +input[0]+ Messages.KEY);
             PrintUtility.print(newLine);
             return true;
@@ -110,7 +110,7 @@ public class MultiValueDictionaryApplication {
         if ((input[0].equals(Commands.ADD.toString()) ||
                 input[0].equals(Commands.MEMBEREXISTS.toString()) ||
                 input[0].equals(Commands.REMOVE.toString()) )
-                && (input.length == 1 || input.length == 2)) {
+                && input.length != 3) {
             PrintUtility.print(Messages.PROVIDE_VALID_COMMAND_FORMAT + input[0] + Messages.KEY_VALUE_PAIR );
             PrintUtility.print(newLine);
             return true;
@@ -122,7 +122,7 @@ public class MultiValueDictionaryApplication {
                 input[0].equals(Commands.ITEMS.toString()) ||
                 input[0].equals(Commands.HELP.toString()) ||
                 input[0].equals(Commands.EXIT.toString()))
-                && input.length > 1) {
+                && input.length != 1) {
             PrintUtility.print(Messages.PROVIDE_VALID_COMMAND_FORMAT + input[0] );
             PrintUtility.print(newLine);
             return true;

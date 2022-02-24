@@ -49,3 +49,7 @@ This will build a jar in \build\libs folder. Once the jar is build, you can copy
 and execute the following command inside the terminal from the folder having the jar
 
 **java -jar Name_Of_Jar.jar**
+
+Alternatively, you can go to inside the appJar folder in the root directory of the project and execute below command:
+
+**java -jar MultiValueDictionaryApplication.jar**
