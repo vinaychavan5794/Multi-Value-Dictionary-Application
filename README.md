@@ -36,7 +36,13 @@ Java Version : Java 8+
 5. Click Clone. If you want to create a project based on these sources, click Yes in the confirmation dialog.
 6.  Execute the Class \MultiValue Dictionary Application\src\main\java\com\spreetail\multivaluedictionary\MultiValueDictionaryApplication.java
 
-**Importing gradle project into IntelliJ**
+  Alternatively, you can execute the following command inside a terminal from a folder of your choice:
+  
+  **git clone https://github.com/vinaychavan5794/Multi-Value-Dictionary-Application.git**
+
+  Once the repository is cloned in the folder, you can open the project in IntellJ IDEA
+  
+**Importing gradle project into IntelliJ IDEA**
 
 https://www.jetbrains.com/help/idea/gradle.html#gradle_jvm
 
